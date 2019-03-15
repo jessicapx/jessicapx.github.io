@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata|PT+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
+	<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script.js" charset="utf-8"></script>
+	
+	<title>TITLE</title>
+	
+</head>
+
+<body>
+	
+	<!-- changes font of last six 		
+	characters-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('h1').html(function() {
+  			var txt= $(this).text();
+  			return txt.substr(0, 
+  			txt.length-6) + 
+  			'<span>'+txt.slice(-6)+'</span>';
+			});
+		});
+	</script>
+	
+	<div id="title_page">
+		
+		<!-- drop links -->
+		<span id="drop_btn">☕︎</span>
+		<nav id="drop_nav">
+			<a href="index.html" name="droplinks">Home</a>
+			<a href="#sec1" name="droplinks">Applications</a>
+			<a href="#sec2" name="droplinks">Web</a>
+			<a href="#sec3" name="droplinks">Graphics</a>
+			<a href="#form" name="droplinks">Contact</a>
+		</nav>
+		<h1>Blog</h1>
+		
+		<!-- underline -->
+		<svg>
+		<defs>
+    	<filter id="f1" x="0" y="0" width="200%" height="200%">
+      		<feOffset result="offOut" in="SourceGraphic" dx="30" dy="0" />
+      		<feBlend in="SourceGraphic" in2="offOut" mode="normal" />
+    	</filter>
+    	<linearGradient id="g">
+      	<stop offset="0" stop-color="rgb(224,144,224)"/>
+      	<stop offset="0.4" stop-color="rgb(140,84,144)"/>
+      	<stop offset="0.6" stop-color="rgb(229,103,103)"/>
+      	<stop offset="0.7" stop-color="rgb(255,159,159)"/>
+		<stop offset="1" stop-color="rgb(255,133,80)" />
+		</linearGradient> 
+  		</defs>
+		<path class="line" d="M25, 170 C170, 110 220, 220 360, 145" stroke="url(#g)" stroke-width="1" fill="none" filter="url(#f1)" opacity="0.5" />
+		</svg>
+		
+		<!-- desc -->
+		<div id="description">
+			<p>Cras rutrum porttitor enim et semper. Sed dignissim hendrerit eros non suscipit</p>
+		</div>
+		
+		<!-- main nav -->
+		<div id="link_container">
+		<nav>
+		<a href="/">Projects</a>
+		<a href="/">GitHub</a>
+		<a href="blog.html">Blog</a>
+		<a href="about.html">About</a>
+		</nav>
+		</div>
+	
+	<!-- end title page -->
+	</div>
+	
+	<!-- content -->
+	<main>
+	<a name="sec1"></a>
+	<section id="section_one">
+		<h2>February 2012</h2>
+		<table>
+			<tr>
+				<td><h3 class="dates">01/01/0000</h3>
+				<p class="blog_entry">
+				Cras rutrum porttitor enim et semper. Sed dignissim hendrerit eros non suscipit</td>
+				</p>
+			</tr>
+		</table>
+	</section>
+	</main>
+
+	<footer>Footer Text</footer>
+
+	</body>
+</html>
