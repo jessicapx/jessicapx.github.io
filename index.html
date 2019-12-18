@@ -10,12 +10,16 @@
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata|PT+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="ionicons.min.css"/>
+
+	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+	<link rel="stylesheet" type="text/css" href=css/"ionicons.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/other_links.css" />
+	<link rel="stylesheet" type="text/css" href="css/contact_form.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Lovers+Quarrel&display=swap" rel="stylesheet">
+
 	<!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
@@ -28,16 +32,19 @@
 
 	<div id="title_page">
 
-		<!-- drop links -->
-		<span id="drop_btn">☕︎</span>
-		<nav id="drop_nav">
+		<div id="title_page_div">
+		<!-- main nav -->
+		<div id="link_container">
+		<nav>
 			<a href="index.html" name="droplinks">Home</a>
 			<a href="#sec1" name="droplinks">Applications</a>
 			<a href="#sec2" name="droplinks">Web</a>
 			<a href="#sec3" name="droplinks">Graphics</a>
 			<a href="#form" name="droplinks">Contact</a>
 		</nav>
+		</div>
 
+		<div id="title_div">
 		<h1>Jessicapx</h1>
 
 		<!-- underline -->
@@ -52,32 +59,32 @@
       	<stop offset="0.4" stop-color="rgb(140,84,144)"/>
       	<stop offset="0.6" stop-color="rgb(229,103,103)"/>
       	<stop offset="0.7" stop-color="rgb(255,159,159)"/>
-		<stop offset="1" stop-color="rgb(255,133,80)" />
+		<stop offset="1" stop-color="rgb(255,133,80)"/>
 		</linearGradient>
   		</defs>
 		<path class="line" d="M25, 170 C170, 110 220, 220 360, 145" stroke="url(#g)" stroke-width="2" fill="none" filter="url(#f1)" opacity="0.5" />
 		</svg>
 
-		<!-- desc -->
-		<div id="description">
-			<p>Cras rutrum porttitor enim et semper. Sed dignissim hendrerit eros non suscipit</p>
 		</div>
 
-		<!-- main nav -->
-		<div id="link_container">
-		<nav>
-		<a href="/">Projects</a>
-		<a href="/"><ion-icon name="logo-github"></ion-icon></a>
-		<a href="blog.html">Blog</a>
-		<a href="about.html">About</a>
-		</nav>
+		<p id="description">Cras rutrum porttitor enim et semper. Sed dignissim hendrerit eros non suscipit</p>
+
+		<div id="other_links">
+			<p>Other Links</p>
+			<ul>
+				<li>About</li>
+				<li>Projects</li>
+				<li>GitHub</li>
+				<li>Other</li>
+			</ul>
 		</div>
 
-	<!-- end title page -->
+		</div>
+
 	</div>
+	<!-- end title page -->
 
 	<!-- CONTENT -->
-
 	<main>
 
 	<!-- SECTION 1 -->
@@ -86,8 +93,10 @@
 		<h2>Application and Software</h2>
 		<table>
 			<tr>
-				<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue vulputate libero, pulvinar laoreet nibh finibus sed. Duis sit amet feugiat nibh, id mollis enim.Aliquam molestie consequat justo rutrum mollis. Nulla vestibulum eleifend nibh. Nulla ac nibh eget sapien pretium condimentum sit amet eu nisi.</td>
-				<td>Duis sit amet feugiat nibh, id mollis enim.Aliquam molestie consequat justo rutrum mollis. Nulla vestibulum eleifend nibh. Nulla ac nibh eget sapien pretium condimentum sit amet eu nisi. Cras rutrum porttitor enim et semper. Sed dignissim hendrerit eros non suscipit.</td>
+				<td>Javascript, C, C++, Java, and Python</td>
+				<td>
+					display text
+				</td>
 			</tr>
 		</table>
 	</section>
@@ -98,7 +107,7 @@
 		<h2>Web Development</h2>
 		<table>
 			<tr>
-				<td>Aliquam molestie consequat justo rutrum mollis. Nulla vestibulum eleifend nibh. Nulla ac nibh eget sapien pretium condimentum sit amet eu nisi.</td>
+				<td>HTML5, CSS3, Javascript, jQuery, JSON</td>
 				<td>Nam nec cursus ex. Maecenas ac neque at nulla dapibus mollis. Duis sit amet feugiat nibh, id mollis enim.Aliquam molestie consequat justo rutrum mollis. Nulla vestibulum eleifend nibh. Nulla ac nibh eget sapien pretium condimentum sit amet eu nisi.</td>
 			</tr>
 		</table>
@@ -110,13 +119,15 @@
 		<h2>Graphic Design</h2>
 		<table>
 			<tr>
-				<td>Nam nec cursus ex. Maecenas ac neque at nulla dapibus mollis. Duis sit amet feugiat nibh, id mollis enim.Aliquam molestie consequat justo rutrum mollis. Nulla vestibulum eleifend nibh. Nulla ac nibh eget sapien pretium condimentum sit amet eu nisi.</td>
-				<td>Nam nec cursus ex. Maecenas ac neque at nulla dapibus mollis. Duis sit amet feugiat nibh, id mollis enim.</td>
+				<td>Adobe software proficiency, including but not limited to: Photoshop,
+				Illustrator, Flash, and InDesign.</td>
+				<td>Application sprite design</td>
 			</tr>
 		</table>
 	</section>
 
 	<!-- SECTION FOUR -->
+	<!-- CONTACT FORM -->
 	<a name="form"></a>
 	<section id="formSection">
 		<h2>Contact</h2>
@@ -124,7 +135,7 @@
 		<table id="contact_form">
 		<tr>
 			<td><h3>Name</h3></td>
-			<td><textarea rows="1"></textarea></td>
+			<td><textarea rows="1" cols="20" maxlength="20"></textarea></td>
 		</tr>
 		<tr>
 			<td><h3>Email</h3></td>
@@ -132,7 +143,11 @@
 		</tr>
 		<tr>
 			<td><h3>Phone</h3></td>
-			<td><textarea rows="1"></textarea></td>
+			<td id="phone">
+				<textarea rows="1" cols="3" maxlength="3"></textarea>
+				<textarea rows="1" cols="3" maxlength="3"></textarea>
+				<textarea rows="1" cols="4" maxlength="4"></textarea>
+			</td>
 		</tr>
 		<tr>
 			<td><h3>Comments</h3></td>
@@ -148,7 +163,7 @@
 
 	</main>
 
-	<footer>Footer Text</footer>
+	<footer><p>Footer Text</p></footer>
 
 	</body>
 </html>

@@ -1,0 +1,155 @@
+<!--------------------------------------------
+	_ _, _ __, __, _  ,  _ _ ___ _, _ _,
+	| |\ | | \ |_  '\/   |_|  |  |\/| |
+	| | \| |_/ |_,  /\ , | |  |  |  | |_,
+	/////////////////////////////////////
+--------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+	<link rel="stylesheet" type="text/css" href="css/ionicons.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/other_links.css" />
+	<link rel="stylesheet" type="text/css" href="css/projects.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script.js" charset="utf-8"></script>
+	<title>JessicaPX</title>
+</head>
+
+<body>
+
+	<!-- changes font of x number of characters -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('h1').html(function() {
+			var txt= $(this).text();
+			return txt.substr(0,
+			txt.length-8) +
+			'<span>'+txt.slice(-8)+'</span>';
+			});
+		});
+	</script>
+
+	<div id="title_page">
+
+		<div id="title_page_div">
+
+		<!-- main nav -->
+		<div id="link_container">
+		<nav>
+			<a href="index.html" name="droplinks">Home</a>
+			<a href="#sec1" name="droplinks">Applications</a>
+			<a href="#sec2" name="droplinks">Web</a>
+			<a href="#sec3" name="droplinks">Graphics</a>
+			<a href="#form" name="droplinks">Contact</a>
+		</nav>
+		</div>
+
+		<div id="title_div">
+		<h1>Projects</h1>
+
+		<!-- underline -->
+		<svg version="1.1"
+		     baseProfile="full"
+		     width="300" height="200"
+		     xmlns="http://www.w3.org/2000/svg">
+
+		<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceGraphic" dx="30" dy="0" />
+		<feBlend in="SourceGraphic" in2="offOut" mode="normal" />
+		</filter>
+		<linearGradient id="g">
+		<stop offset="0" stop-color="rgb(224,144,224)"/>
+		<stop offset="0.4" stop-color="rgb(140,84,144)"/>
+		<stop offset="0.6" stop-color="rgb(229,103,103)"/>
+		<stop offset="0.7" stop-color="rgb(255,159,159)"/>
+		<stop offset="1" stop-color="rgb(255,133,80)" />
+		</linearGradient>
+		</defs>
+		<path class="line" d="M25, 170 C170, 110 220, 220 360, 145" stroke="url(#g)"
+		stroke-width="2" fill="none" filter="url(#f1)" opacity="0.5" />
+		</svg>
+
+		</div>
+
+		<p id="description">Cras rutrum porttitor enim et semper. Sed dignissim hendrerit eros non suscipit</p>
+
+		<div id="other_links">
+			<p>Other Links</p>
+			<ul>
+				<li>About</li>
+				<li>Projects</li>
+				<li>GitHub</li>
+				<li>Other</li>
+			</ul>
+		</div>
+
+		</div>
+</div>
+
+<!-- CONTENT -->
+
+<main>
+
+<!-- SECTION 1 -->
+<a name="sec1"></a>
+<section id="section_one">
+	<h2>Color Palette Generator</h2>
+	<table class="projectsTable" align="center">
+		<tr>
+			<td class="descImg">
+				<img src="color_generator/Color_Palette.png" />
+			</td>
+			<td class="descText">
+				<p>Converts hexadecimal color value input to RGB, or generates
+				random hex value. Triadic color values are determined and displayed
+				with dark-to-light corresponding color palettes.
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="descLink" colspan="2">
+				<a href="color_generator/index.html">PROJECT LINK</a>
+			</td>
+		</tr>
+	</table>
+</section>
+<section id="section_two">
+	<h2>Binary Converter</h2>
+	<table class="projectsTable" align="center">
+		<tr>
+			<td class="descImg">
+				<img src="Binary.png" />
+			</td>
+			<td class="descText">
+				<p>Converts characters and digits to binary
+				values. Groups digits together as a single int.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="descLink" colspan="2">
+				<a href="">PROJECT LINK</a>
+			</td>
+		</tr>
+	</table>
+</section>
+
+</main>
+
+	<footer><p>Footer Text</p></footer>
+
+	</body>
+</html>
