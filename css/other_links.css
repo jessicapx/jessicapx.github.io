@@ -1,5 +1,9 @@
 /*	mobile only	*/
 @media only screen and (max-width:600px) {
+	#other_links li, #other_links p {
+		padding:8px;
+		font-size:0.9em;
+	}
 }
 /*	desktop only	*/
 @media only screen and (min-width:601px) {
@@ -13,6 +17,9 @@
 	}
 	#other_links li {
 		padding:10px 100px;
+	}
+	#other_links li, #other_links p {
+		padding:10px;
 	}
 }
 
@@ -33,7 +40,6 @@
 #other_links li, #other_links p {
 	color:white;
 	margin:0;
-	padding:10px;
 	text-align:center;
 	border:1px solid rgba(255, 255, 255, 0.4);
 	border-radius:4px;

@@ -34,8 +34,10 @@ a {
 	h1 {
 		left:-18%;
 	}
-	svg {
-		left:6%;
+	nav a {
+		margin:1px;
+		padding:8px;
+		font-size:0.9em;
 	}
 }
 /*	desktop only	*/
@@ -46,6 +48,10 @@ a {
 	svg {
 		width:100%;
 		left:33%;
+	}
+	nav a {
+		margin:4px;
+		padding:10px;
 	}
 }
 
@@ -58,10 +64,10 @@ a {
 
 #title_page_div {
 	width:90%;
-	height:90%;
+	height:94%;
 	top:50%;
 	left:50%;
-	padding-bottom:30px;
+	padding-bottom:10px;
 	display:table;
 	position:absolute;
 	-webkit-transform:translate(-50%, -50%);
@@ -132,18 +138,12 @@ svg {
 	display:table-row;
 }
 
-#link_container {
+nav {
 	width:100%;
+	text-align:center;
 	display:table-row;
 }
-
-#link_container nav {
-	text-align:center;
-}
-
-#link_container a {
-	margin:5px;
-	padding:10px;
+nav a {
 	color:rgba(255,255,255,0.8);
 	background:rgba(255,255,255,0.2);
 	border:1px solid white;
